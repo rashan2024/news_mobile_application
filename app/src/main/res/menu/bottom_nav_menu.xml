@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_sports"
+        android:icon="@drawable/ic_sport"
+        android:title="Sports" />
+    <item
+        android:id="@+id/nav_academics"
+        android:icon="@drawable/ic_academic"
+        android:title="Academics" />
+    <item
+        android:id="@+id/nav_events"
+        android:icon="@drawable/ic_event"
+        android:title="Events" />
+
+</menu>

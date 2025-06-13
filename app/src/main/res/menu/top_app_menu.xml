@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+     - This is the Search Icon and Search Bar functionality.
+     - `app:actionViewClass` tells the menu to use a SearchView widget.
+     - `app:showAsAction="ifRoom|collapseActionView"` makes the icon visible on the toolbar
+       and allows it to expand/collapse.
+    -->
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <!-- Developer and User Info items remain in the overflow menu -->
+    <item
+        android:id="@+id/menu_developer_details"
+        android:title="Developer Details"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_user_info"
+        android:title="User Info"
+        app:showAsAction="never" />
+
+    <!-- NEW: Logout option added to the overflow menu -->
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>
